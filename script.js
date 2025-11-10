@@ -1,6 +1,6 @@
-// This waits for the page to finish loading before running setup code
+// This waits until the page has loaded
 window.onload = function () {
-  // This writes a message to the console to confirm JS is connected
+  // This logs a message so we know the script is running
   console.log("Assignment 4 setup loaded.");
   // This ends the onload handler
 };

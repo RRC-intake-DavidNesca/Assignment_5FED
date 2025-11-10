@@ -1,42 +1,62 @@
 <!-- This declares the document type as HTML5 -->
 <!DOCTYPE html>
-<!-- This opens the root HTML element and sets the language to English -->
+<!-- This opens the html element and sets the language to English -->
 <html lang="en">
-<!-- This opens the head section for metadata and links -->
+<!-- This opens the head element containing metadata and linked files -->
 <head>
-<!-- This sets the character encoding for correct text rendering -->
+<!-- This sets the character encoding for proper text rendering -->
 <meta charset="UTF-8">
-<!-- This sets the viewport for responsive behavior -->
+<!-- This sets the viewport so the page scales well on mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- This sets the page title shown in the browser tab -->
+<!-- This sets the page title -->
 <title>Assignment 4 — Events &amp; Forms</title>
-<!-- This links our stylesheet so styles apply to the page -->
+<!-- This links the stylesheet for the page styles -->
 <link rel="stylesheet" href="styles.css">
-<!-- This closes the head section -->
+<!-- This closes the head element -->
 </head>
-<!-- This opens the body which holds all visible content -->
+<!-- This opens the body where visible content lives -->
 <body>
-<!-- This opens a header to title the page -->
+<!-- This opens a centered container that limits line width -->
+<div class="container">
+<!-- This opens the header which contains title and navigation -->
 <header>
-<!-- This shows the main heading for the assignment -->
+<!-- This shows the main heading for the page -->
 <h1>Assignment 4 — Events &amp; Forms</h1>
+<!-- This opens a simple site navigation -->
+<nav>
+<!-- This link jumps down to the contact section -->
+<a href="#contact">Contact</a>
+<!-- This closes the navigation -->
+</nav>
 <!-- This closes the header -->
 </header>
 <!-- This opens the main content area -->
 <main>
-<!-- This paragraph confirms the project is live -->
-<p>Project setup complete. Features will be added step by step.</p>
+<!-- This opens an intro section that explains the page -->
+<section id="intro">
+<!-- This sentence explains what we are about to build -->
+<p>We will progressively add a contact form and interactive behavior using JavaScript events.</p>
+<!-- This closes the intro section -->
+</section>
+<!-- This opens the contact section where the form will be placed -->
+<section id="contact">
+<!-- This placeholder marks the future location of our form -->
+<p>Contact form coming in the next step.</p>
+<!-- This closes the contact section -->
+</section>
 <!-- This closes the main content area -->
 </main>
 <!-- This opens the footer area -->
 <footer>
-<!-- This shows a small copyright -->
+<!-- This shows a small footer note -->
 <small>&copy; 2025 Your Name</small>
-<!-- This closes the footer -->
+<!-- This closes the footer area -->
 </footer>
-<!-- This loads our JavaScript so we can add behavior -->
+<!-- This closes the centered container -->
+</div>
+<!-- This loads our JavaScript file after the HTML so elements exist -->
 <script src="script.js" defer></script>
-<!-- This closes the body -->
+<!-- This closes the body element -->
 </body>
 <!-- This closes the html element -->
 </html>

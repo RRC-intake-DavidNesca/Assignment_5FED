@@ -1,35 +1,86 @@
-/* This opens a rule to style the whole page */
+/* This styles the overall page body */
 body {
-  /* This sets a clean, readable font stack */
+  /* This sets a clean, readable font */
   font-family: Arial, sans-serif;
-  /* This removes default browser margin */
+  /* This removes default margin */
   margin: 0;
-  /* This removes default browser padding */
+  /* This removes default padding */
   padding: 0;
-  /* This sets comfortable line spacing for text */
-  line-height: 1.5;
+  /* This sets a comfortable line height */
+  line-height: 1.6;
+  /* This sets a light background for the page */
+  background: #fafafa;
+  /* This sets a dark text color for contrast */
+  color: #222;
   /* This closes the body rule */
 }
 
-/* This opens a rule to add uniform padding to major sections */
-header, main, footer {
-  /* This adds consistent inner spacing */
+/* This centers the content and limits line length */
+.container {
+  /* This limits the maximum width of the content */
+  max-width: 860px;
+  /* This centers the container horizontally */
+  margin: 0 auto;
+  /* This adds inner spacing so text isn’t flush to the edges */
   padding: 1rem;
+  /* This closes the container rule */
+}
+
+/* This adds inner spacing to major sections */
+header, main, footer {
+  /* This applies vertical padding for breathing room */
+  padding: 1rem 0;
   /* This closes the rule */
 }
 
-/* This opens a rule to center the main title */
+/* This draws a subtle border beneath the header */
+header {
+  /* This adds a faint dividing line under the header */
+  border-bottom: 1px solid #e5e5e5;
+  /* This closes the header rule */
+}
+
+/* This centers the main heading and tunes its margins */
 h1 {
-  /* This horizontally centers heading text */
+  /* This centers the heading text */
   text-align: center;
+  /* This adjusts top/right/bottom/left margins */
+  margin: 0.2rem 0 0.6rem 0;
   /* This closes the h1 rule */
 }
 
-/* This opens a rule to style the footer’s appearance */
+/* This styles the navigation links */
+nav a {
+  /* This spaces links horizontally */
+  margin-right: 1rem;
+  /* This removes the default underline */
+  text-decoration: none;
+  /* This sets a blue color that stands out */
+  color: #0a58ca;
+  /* This closes the nav link rule */
+}
+
+/* This underlines links on hover for a visual cue */
+nav a:hover {
+  /* This adds underline on hover */
+  text-decoration: underline;
+  /* This closes the hover rule */
+}
+
+/* This separates sections vertically */
+section {
+  /* This adds top and bottom margin so sections don’t collide */
+  margin: 1rem 0;
+  /* This closes the section rule */
+}
+
+/* This styles the footer’s border and text color */
 footer {
-  /* This draws a subtle top border for separation */
-  border-top: 1px solid #ddd;
-  /* This centers the footer’s text */
+  /* This draws a faint line above the footer */
+  border-top: 1px solid #e5e5e5;
+  /* This centers the footer text */
   text-align: center;
+  /* This slightly dims the footer text color */
+  color: #555;
   /* This closes the footer rule */
 }
