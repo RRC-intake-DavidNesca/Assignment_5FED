@@ -1,0 +1,74 @@
+<!-- Declare the document type so browsers render in standards mode -->
+<!DOCTYPE html>
+<!-- Open the root html element and set language to English for accessibility -->
+<html lang="en">
+<!-- Open the head where metadata, title, and styles live -->
+<head>
+  <!-- Set the character encoding to UTF-8 so all characters render properly -->
+  <meta charset="UTF-8">
+  <!-- Make the layout responsive on mobile devices by controlling viewport scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Set a concise, descriptive page title shown in the browser tab -->
+  <title>Assignment 4 – Contact Form with Events & Validation</title>
+  <!-- Start of internal style block for quick initial styling in this step -->
+  <style>
+    /* Apply a readable system font and reset default margins */
+    body { font-family: Arial, sans-serif; margin: 0; }
+
+    /* Create a centered, max-width content container with padding for breathing space */
+    .container { max-width: 720px; margin: 0 auto; padding: 16px; }
+
+    /* Emphasize the page header with a subtle background and spacing */
+    header { background: #f4f4f4; border-bottom: 1px solid #ddd; }
+    
+    /* Constrain the header content inside the same central container */
+    header .container { padding: 20px 16px; }
+
+    /* Add separation below the header for the main content area */
+    main { padding-top: 16px; }
+
+    /* Provide a light card look for the form wrapper area (to be filled next step) */
+    .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; padding: 16px; }
+
+    /* Keep the summary area hidden until we need it after a successful submit */
+    #summary { display: none; }
+  </style>
+</head>
+<!-- Open the body where visible page content and scripts live -->
+<body>
+  <!-- Add a semantic page header -->
+  <header>
+    <!-- Use the same container to keep header content aligned with the page -->
+    <div class="container">
+      <!-- Provide a clear page title for screen readers and users -->
+      <h1>Assignment 4: Contact Form</h1>
+      <!-- Offer a short subtitle to describe the objective of this assignment -->
+      <p>Forms + Events + Client-side Validation (Module 4)</p>
+    </div>
+  </header>
+
+  <!-- Open the main content region for the form and (later) the summary -->
+  <main>
+    <!-- Keep content centered and consistent with the header -->
+    <div class="container">
+      <!-- Prepare a card that will hold our form content in the next step -->
+      <section class="card" id="form-card">
+        <!-- Insert a placeholder message so we can verify the structure is working -->
+        <p>Form goes here in Step 2.</p>
+      </section>
+
+      <!-- Prepare a container to display submission results when validation passes -->
+      <section class="card" id="summary" aria-live="polite">
+        <!-- Leave empty; will be populated when the form is submitted successfully -->
+      </section>
+    </div>
+  </main>
+
+  <!-- Add a script block placeholder to wire events in later steps -->
+  <script>
+    // Log a simple message so we know JavaScript is connected
+    console.log("Step 1: Scaffold loaded");
+  </script>
+</body>
+<!-- Close the root html element -->
+</html>
