@@ -8,7 +8,7 @@ body {
   padding: 0;
   /* This sets a comfortable line height */
   line-height: 1.6;
-  /* This sets a light background for the page */
+  /* This sets a light background */
   background: #fafafa;
   /* This sets a dark text color for contrast */
   color: #222;
@@ -19,48 +19,48 @@ body {
 .container {
   /* This limits the maximum width of the content */
   max-width: 860px;
-  /* This centers the container horizontally */
+  /* This centers the container */
   margin: 0 auto;
-  /* This adds inner spacing so text isn’t flush to the edges */
+  /* This adds internal padding */
   padding: 1rem;
   /* This closes the container rule */
 }
 
-/* This adds inner spacing to major sections */
+/* This adds vertical padding to major sections */
 header, main, footer {
-  /* This applies vertical padding for breathing room */
+  /* This applies vertical padding for spacing */
   padding: 1rem 0;
   /* This closes the rule */
 }
 
-/* This draws a subtle border beneath the header */
+/* This draws a faint line below the header */
 header {
-  /* This adds a faint dividing line under the header */
+  /* This adds a subtle separator */
   border-bottom: 1px solid #e5e5e5;
   /* This closes the header rule */
 }
 
-/* This centers the main heading and tunes its margins */
+/* This centers the main heading and adjusts margins */
 h1 {
-  /* This centers the heading text */
+  /* This centers the heading */
   text-align: center;
-  /* This adjusts top/right/bottom/left margins */
+  /* This sets top/right/bottom/left margins */
   margin: 0.2rem 0 0.6rem 0;
   /* This closes the h1 rule */
 }
 
-/* This styles the navigation links */
+/* This styles navigation links */
 nav a {
   /* This spaces links horizontally */
   margin-right: 1rem;
-  /* This removes the default underline */
+  /* This removes default underline */
   text-decoration: none;
-  /* This sets a blue color that stands out */
+  /* This sets a blue color */
   color: #0a58ca;
   /* This closes the nav link rule */
 }
 
-/* This underlines links on hover for a visual cue */
+/* This underlines the link when hovered */
 nav a:hover {
   /* This adds underline on hover */
   text-decoration: underline;
@@ -69,18 +69,104 @@ nav a:hover {
 
 /* This separates sections vertically */
 section {
-  /* This adds top and bottom margin so sections don’t collide */
+  /* This adds space above and below each section */
   margin: 1rem 0;
   /* This closes the section rule */
 }
 
-/* This styles the footer’s border and text color */
+/* This draws a line above the footer and dims its text */
 footer {
-  /* This draws a faint line above the footer */
+  /* This adds a subtle top border */
   border-top: 1px solid #e5e5e5;
   /* This centers the footer text */
   text-align: center;
-  /* This slightly dims the footer text color */
+  /* This slightly dims the text color */
   color: #555;
   /* This closes the footer rule */
+}
+
+/* This stacks label and control vertically with spacing */
+.field {
+  /* This uses flexbox to stack children */
+  display: flex;
+  /* This arranges children in a column */
+  flex-direction: column;
+  /* This adds space below each field group */
+  margin-bottom: 0.75rem;
+  /* This closes the field rule */
+}
+
+/* This makes labels bold and separates them from controls */
+label {
+  /* This emboldens label text */
+  font-weight: bold;
+  /* This adds a small space under labels */
+  margin-bottom: 0.25rem;
+  /* This closes the label rule */
+}
+
+/* This styles text inputs, email, select, and textarea uniformly */
+input[type="text"], input[type="email"], select, textarea {
+  /* This adds inner padding for comfortable typing */
+  padding: 0.5rem;
+  /* This draws a light border around controls */
+  border: 1px solid #ccc;
+  /* This rounds the corners slightly */
+  border-radius: 4px;
+  /* This closes the control rule */
+}
+
+/* This aligns checkbox and label on one line with a gap */
+.checkbox-field {
+  /* This keeps the field using flexbox */
+  flex-direction: row;
+  /* This vertically centers checkbox and label */
+  align-items: center;
+  /* This spaces the checkbox and its label */
+  gap: 0.5rem;
+  /* This closes the checkbox-field rule */
+}
+
+/* This lays out buttons horizontally with spacing */
+.actions {
+  /* This uses flexbox for a horizontal layout */
+  display: flex;
+  /* This adds a gap between buttons */
+  gap: 0.5rem;
+  /* This closes the actions rule */
+}
+
+/* This styles the buttons to look clickable */
+button {
+  /* This adds padding for a good hit area */
+  padding: 0.6rem 1rem;
+  /* This draws a blue border around the button */
+  border: 1px solid #0a58ca;
+  /* This gives the button a blue background */
+  background: #0a58ca;
+  /* This sets the button text color to white for contrast */
+  color: white;
+  /* This rounds the corners slightly */
+  border-radius: 4px;
+  /* This shows a pointer cursor to indicate clickability */
+  cursor: pointer;
+  /* This closes the button rule */
+}
+
+/* This provides spacing for the feedback area above the form */
+#messages {
+  /* This sets top/right/bottom/left margins for the messages area */
+  margin: 0.5rem 0 0.75rem 0;
+  /* This closes the messages rule */
+}
+
+/* This displays the character counter below the textarea */
+#msgCount {
+  /* This forces the counter to its own line */
+  display: block;
+  /* This adds a small top margin above the counter */
+  margin-top: 0.25rem;
+  /* This sets a muted text color */
+  color: #666;
+  /* This closes the counter rule */
 }

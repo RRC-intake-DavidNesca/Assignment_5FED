@@ -35,13 +35,77 @@
 <!-- This opens an intro section that explains the page -->
 <section id="intro">
 <!-- This sentence explains what we are about to build -->
-<p>We will progressively add a contact form and interactive behavior using JavaScript events.</p>
+<p>Use the form below to practice JavaScript events and simple validation.</p>
 <!-- This closes the intro section -->
 </section>
-<!-- This opens the contact section where the form will be placed -->
+<!-- This opens the contact section which contains the form -->
 <section id="contact">
-<!-- This placeholder marks the future location of our form -->
-<p>Contact form coming in the next step.</p>
+<!-- This heading labels the form area -->
+<h2>Contact Us</h2>
+<!-- This is a live region where we will show errors or success messages -->
+<div id="messages" aria-live="polite"></div>
+<!-- This opens the form and disables native validation so JS can handle it -->
+<form id="contactForm" novalidate>
+<!-- This opens a group for the name -->
+<div class="field">
+<!-- This label describes the name input -->
+<label for="name">Full Name</label>
+<!-- This is the text input for the user’s name -->
+<input type="text" id="name" name="name" placeholder="Jane Doe" required>
+<!-- This closes the name field group -->
+</div>
+<!-- This opens a group for the email -->
+<div class="field">
+<!-- This label describes the email input -->
+<label for="email">Email</label>
+<!-- This is the email input for the user’s address -->
+<input type="email" id="email" name="email" placeholder="jane@example.com" required>
+<!-- This closes the email field group -->
+</div>
+<!-- This opens a group for the topic -->
+<div class="field">
+<!-- This label describes the topic select element -->
+<label for="topic">Topic</label>
+<!-- This opens the select menu -->
+<select id="topic" name="topic">
+<!-- This creates an option for questions -->
+<option value="Question">Question</option>
+<!-- This creates an option for feedback -->
+<option value="Feedback">Feedback</option>
+<!-- This creates an option for other topics -->
+<option value="Other">Other</option>
+<!-- This closes the select menu -->
+</select>
+<!-- This closes the topic field group -->
+</div>
+<!-- This opens a group for the subscribe checkbox -->
+<div class="field checkbox-field">
+<!-- This checkbox lets the user opt in to updates -->
+<input type="checkbox" id="subscribe" name="subscribe">
+<!-- This label clarifies the checkbox purpose -->
+<label for="subscribe">Subscribe to updates</label>
+<!-- This closes the checkbox field group -->
+</div>
+<!-- This opens a group for the message text area -->
+<div class="field">
+<!-- This label describes the message field -->
+<label for="message">Message</label>
+<!-- This is the multi-line input for the user’s message -->
+<textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+<!-- This is a small line showing a live character count -->
+<small id="msgCount">0/200</small>
+<!-- This closes the message field group -->
+</div>
+<!-- This opens a container for the buttons -->
+<div class="actions">
+<!-- This button attempts to submit the form -->
+<button type="submit">Send</button>
+<!-- This button clears the form fields -->
+<button type="reset">Clear</button>
+<!-- This closes the button container -->
+</div>
+<!-- This closes the form -->
+</form>
 <!-- This closes the contact section -->
 </section>
 <!-- This closes the main content area -->
@@ -54,7 +118,7 @@
 </footer>
 <!-- This closes the centered container -->
 </div>
-<!-- This loads our JavaScript file after the HTML so elements exist -->
+<!-- This loads the JavaScript file after HTML so elements exist -->
 <script src="script.js" defer></script>
 <!-- This closes the body element -->
 </body>
