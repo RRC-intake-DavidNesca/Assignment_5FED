@@ -1,172 +1,48 @@
-/* This styles the overall page body */
-body {
-  /* This sets a clean, readable font */
-  font-family: Arial, sans-serif;
-  /* This removes default margin */
-  margin: 0;
-  /* This removes default padding */
-  padding: 0;
-  /* This sets a comfortable line height */
-  line-height: 1.6;
-  /* This sets a light background */
-  background: #fafafa;
-  /* This sets a dark text color for contrast */
-  color: #222;
-  /* This closes the body rule */
-}
-
-/* This centers the content and limits line length */
-.container {
-  /* This limits the maximum width of the content */
-  max-width: 860px;
-  /* This centers the container */
-  margin: 0 auto;
-  /* This adds internal padding */
-  padding: 1rem;
-  /* This closes the container rule */
-}
-
-/* This adds vertical padding to major sections */
-header, main, footer {
-  /* This applies vertical padding for spacing */
-  padding: 1rem 0;
-  /* This closes the rule */
-}
-
-/* This draws a faint line below the header */
-header {
-  /* This adds a subtle separator */
-  border-bottom: 1px solid #e5e5e5;
-  /* This closes the header rule */
-}
-
-/* This centers the main heading and adjusts margins */
-h1 {
-  /* This centers the heading */
-  text-align: center;
-  /* This sets top/right/bottom/left margins */
-  margin: 0.2rem 0 0.6rem 0;
-  /* This closes the h1 rule */
-}
-
-/* This styles navigation links */
-nav a {
-  /* This spaces links horizontally */
-  margin-right: 1rem;
-  /* This removes default underline */
-  text-decoration: none;
-  /* This sets a blue color */
-  color: #0a58ca;
-  /* This closes the nav link rule */
-}
-
-/* This underlines the link when hovered */
-nav a:hover {
-  /* This adds underline on hover */
-  text-decoration: underline;
-  /* This closes the hover rule */
-}
-
-/* This separates sections vertically */
-section {
-  /* This adds space above and below each section */
-  margin: 1rem 0;
-  /* This closes the section rule */
-}
-
-/* This draws a line above the footer and dims its text */
-footer {
-  /* This adds a subtle top border */
-  border-top: 1px solid #e5e5e5;
-  /* This centers the footer text */
-  text-align: center;
-  /* This slightly dims the text color */
-  color: #555;
-  /* This closes the footer rule */
-}
-
-/* This stacks label and control vertically with spacing */
-.field {
-  /* This uses flexbox to stack children */
-  display: flex;
-  /* This arranges children in a column */
-  flex-direction: column;
-  /* This adds space below each field group */
-  margin-bottom: 0.75rem;
-  /* This closes the field rule */
-}
-
-/* This makes labels bold and separates them from controls */
-label {
-  /* This emboldens label text */
-  font-weight: bold;
-  /* This adds a small space under labels */
-  margin-bottom: 0.25rem;
-  /* This closes the label rule */
-}
-
-/* This styles text inputs, email, select, and textarea uniformly */
-input[type="text"], input[type="email"], select, textarea {
-  /* This adds inner padding for comfortable typing */
-  padding: 0.5rem;
-  /* This draws a light border around controls */
-  border: 1px solid #ccc;
-  /* This rounds the corners slightly */
-  border-radius: 4px;
-  /* This closes the control rule */
-}
-
-/* This aligns checkbox and label on one line with a gap */
-.checkbox-field {
-  /* This keeps the field using flexbox */
-  flex-direction: row;
-  /* This vertically centers checkbox and label */
-  align-items: center;
-  /* This spaces the checkbox and its label */
-  gap: 0.5rem;
-  /* This closes the checkbox-field rule */
-}
-
-/* This lays out buttons horizontally with spacing */
-.actions {
-  /* This uses flexbox for a horizontal layout */
-  display: flex;
-  /* This adds a gap between buttons */
-  gap: 0.5rem;
-  /* This closes the actions rule */
-}
-
-/* This styles the buttons to look clickable */
-button {
-  /* This adds padding for a good hit area */
-  padding: 0.6rem 1rem;
-  /* This draws a blue border around the button */
-  border: 1px solid #0a58ca;
-  /* This gives the button a blue background */
-  background: #0a58ca;
-  /* This sets the button text color to white for contrast */
-  color: white;
-  /* This rounds the corners slightly */
-  border-radius: 4px;
-  /* This shows a pointer cursor to indicate clickability */
-  cursor: pointer;
-  /* This closes the button rule */
-}
-
-/* This provides spacing for the feedback area above the form */
-#messages {
-  /* This sets top/right/bottom/left margins for the messages area */
-  margin: 0.5rem 0 0.75rem 0;
-  /* This closes the messages rule */
-}
-
-/* This displays the character counter below the textarea */
-#msgCount {
-  /* This forces the counter to its own line */
-  display: block;
-  /* This adds a small top margin above the counter */
-  margin-top: 0.25rem;
-  /* This sets a muted text color */
-  color: #666;
-  /* This closes the counter rule */
-}
+/* This sets a comfortable default font, removes default margins, and uses a readable line height */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #fafafa; color: #222; }
+/* This limits the line width and centers the content for easier reading */
+.container { max-width: 860px; margin: 0 auto; padding: 1rem; }
+/* This adds internal spacing to major page sections */
+header, main, footer { padding: 1rem 0; }
+/* This draws a faint line under the header to separate it visually */
+header { border-bottom: 1px solid #e5e5e5; }
+/* This centers the main heading and adjusts its margin */
+h1 { text-align: center; margin: 0.2rem 0 0.6rem 0; }
+/* This styles navigation links with space and a brand color */
+nav a { margin-right: 1rem; text-decoration: none; color: #0a58ca; }
+/* This gives users a hover cue so the link feels interactive */
+nav a:hover { text-decoration: underline; }
+/* This adds vertical spacing between sections to avoid crowding */
+section { margin: 1rem 0; }
+/* This draws a faint line above the footer and dims its text color */
+footer { border-top: 1px solid #e5e5e5; text-align: center; color: #555; }
+/* This stacks label and control vertically and adds breathing room */
+.field { display: flex; flex-direction: column; margin-bottom: 0.75rem; }
+/* This makes labels bolder and gives them a small bottom gap */
+label { font-weight: bold; margin-bottom: 0.25rem; }
+/* This gives text inputs, selects, and textareas a consistent look */
+input[type="text"], input[type="email"], select, textarea { padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+/* This aligns the checkbox and its label on one line with a small gap */
+.checkbox-field { flex-direction: row; align-items: center; gap: 0.5rem; }
+/* This lays out the buttons horizontally with a small gap */
+.actions { display: flex; gap: 0.5rem; }
+/* This styles the buttons with padding, a blue background, and rounded corners */
+button { padding: 0.6rem 1rem; border: 1px solid #0a58ca; background: #0a58ca; color: #fff; border-radius: 4px; cursor: pointer; }
+/* This slightly changes the button color on hover for feedback */
+button:hover { background: #084eab; }
+/* This reserves space for feedback messages above the form */
+#messages { margin: 0.5rem 0 0.75rem 0; }
+/* This displays and styles the character counter below the textarea */
+#msgCount { display: block; margin-top: 0.25rem; color: #666; }
+/* This colors invalid fields with a red border and pale red background */
+.invalid { border-color: #c62828; background: #ffeaea; }
+/* This colors valid fields with a green border and pale green background */
+.valid { border-color: #2e7d32; background: #eaffea; }
+/* This colors error list items red so problems are obvious */
+#messages ul { margin: 0; padding-left: 1.2rem; color: #c62828; }
+/* This colors success text green and makes it bold so success stands out */
+#messages p { margin: 0; color: #2e7d32; font-weight: bold; }
+/* This preserves visible focus outlines so keyboard users can see focus */
+a:focus, input:focus, select:focus, textarea:focus, button:focus { outline: 2px solid #0a58ca; outline-offset: 2px; }
+/* This slightly increases the internal line-height of form controls for readability */
+input[type="text"], input[type="email"], select, textarea { line-height: 1.4; }
