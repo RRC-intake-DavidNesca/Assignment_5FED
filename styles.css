@@ -1,0 +1,35 @@
+/* This opens a rule to style the whole page */
+body {
+  /* This sets a clean, readable font stack */
+  font-family: Arial, sans-serif;
+  /* This removes default browser margin */
+  margin: 0;
+  /* This removes default browser padding */
+  padding: 0;
+  /* This sets comfortable line spacing for text */
+  line-height: 1.5;
+  /* This closes the body rule */
+}
+
+/* This opens a rule to add uniform padding to major sections */
+header, main, footer {
+  /* This adds consistent inner spacing */
+  padding: 1rem;
+  /* This closes the rule */
+}
+
+/* This opens a rule to center the main title */
+h1 {
+  /* This horizontally centers heading text */
+  text-align: center;
+  /* This closes the h1 rule */
+}
+
+/* This opens a rule to style the footer’s appearance */
+footer {
+  /* This draws a subtle top border for separation */
+  border-top: 1px solid #ddd;
+  /* This centers the footer’s text */
+  text-align: center;
+  /* This closes the footer rule */
+}

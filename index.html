@@ -1,76 +1,42 @@
-<!-- Wrap the form in a card for visual grouping -->
-<section class="card" id="form-card">
-  <!-- Create a semantic form with a POST method (action is # since client-side handling) -->
-  <form id="contactForm" method="post" action="#">
-    <!-- Group: Name field with label and input for accessibility and clarity -->
-    <div class="field">
-      <!-- Associate the label with the input by matching the 'for' to the input's id -->
-      <label for="name">Full Name</label>
-      <!-- Collect the user's name; required for submission -->
-      <input type="text" id="name" name="name" placeholder="e.g., Taylor Nguyen" required>
-      <!-- Reserve a small element for showing validation errors for this field -->
-      <small class="error" id="nameError" aria-live="polite"></small>
-    </div>
-
-    <!-- Group: Email field with label and input -->
-    <div class="field">
-      <!-- Associate label to input for screen readers -->
-      <label for="email">Email</label>
-      <!-- Use type='email' to get basic browser validation for format -->
-      <input type="email" id="email" name="email" placeholder="e.g., taylor@example.com" required>
-      <!-- Provide a container for error messages -->
-      <small class="error" id="emailError" aria-live="polite"></small>
-    </div>
-
-    <!-- Group: Subject selection (helps demonstrate select + change event) -->
-    <div class="field">
-      <!-- Label the dropdown -->
-      <label for="subject">Subject</label>
-      <!-- Provide a simple select with a few common subjects -->
-      <select id="subject" name="subject" required>
-        <!-- Offer a hidden placeholder option to nudge selection -->
-        <option value="" selected disabled>Select a subject</option>
-        <!-- Add an option for general inquiries -->
-        <option value="General">General Question</option>
-        <!-- Add an option for support requests -->
-        <option value="Support">Support</option>
-        <!-- Add an option for feedback -->
-        <option value="Feedback">Feedback</option>
-      </select>
-      <!-- Provide a container for errors on the select -->
-      <small class="error" id="subjectError" aria-live="polite"></small>
-    </div>
-
-    <!-- Group: Message textarea with a character counter -->
-    <div class="field">
-      <!-- Label the textarea for accessibility -->
-      <label for="message">Message</label>
-      <!-- Collect a longer, free-form message from the user -->
-      <textarea id="message" name="message" rows="5" placeholder="Type your message..." required maxlength="300"></textarea>
-      <!-- Show a live character counter to communicate remaining space -->
-      <small id="charCounter" aria-live="polite">0 / 300</small>
-      <!-- Provide a container for message-specific validation messages -->
-      <small class="error" id="messageError" aria-live="polite"></small>
-    </div>
-
-    <!-- Group: Terms checkbox to demonstrate validation on boolean inputs -->
-    <div class="field">
-      <!-- Wrap label around checkbox for an easier hit area -->
-      <label>
-        <!-- Require the user to confirm they accept the terms -->
-        <input type="checkbox" id="terms" name="terms" required>
-        I agree to the terms.
-      </label>
-      <!-- Provide a container to show an error if the checkbox is not selected -->
-      <small class="error" id="termsError" aria-live="polite"></small>
-    </div>
-
-    <!-- Action row: submit the form or clear inputs -->
-    <div class="actions">
-      <!-- Primary submit button to trigger validation and submission -->
-      <button type="submit" id="submitBtn">Send Message</button>
-      <!-- Secondary reset button to clear all fields quickly -->
-      <button type="reset" id="resetBtn">Reset</button>
-    </div>
-  </form>
-</section>
+<!-- This declares the document type as HTML5 -->
+<!DOCTYPE html>
+<!-- This opens the root HTML element and sets the language to English -->
+<html lang="en">
+<!-- This opens the head section for metadata and links -->
+<head>
+<!-- This sets the character encoding for correct text rendering -->
+<meta charset="UTF-8">
+<!-- This sets the viewport for responsive behavior -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- This sets the page title shown in the browser tab -->
+<title>Assignment 4 — Events &amp; Forms</title>
+<!-- This links our stylesheet so styles apply to the page -->
+<link rel="stylesheet" href="styles.css">
+<!-- This closes the head section -->
+</head>
+<!-- This opens the body which holds all visible content -->
+<body>
+<!-- This opens a header to title the page -->
+<header>
+<!-- This shows the main heading for the assignment -->
+<h1>Assignment 4 — Events &amp; Forms</h1>
+<!-- This closes the header -->
+</header>
+<!-- This opens the main content area -->
+<main>
+<!-- This paragraph confirms the project is live -->
+<p>Project setup complete. Features will be added step by step.</p>
+<!-- This closes the main content area -->
+</main>
+<!-- This opens the footer area -->
+<footer>
+<!-- This shows a small copyright -->
+<small>&copy; 2025 Your Name</small>
+<!-- This closes the footer -->
+</footer>
+<!-- This loads our JavaScript so we can add behavior -->
+<script src="script.js" defer></script>
+<!-- This closes the body -->
+</body>
+<!-- This closes the html element -->
+</html>
